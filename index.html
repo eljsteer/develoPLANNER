@@ -28,78 +28,82 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <div id="data-saved"></div>
     <div class="container">
-      <div class="input-group mb-3">
+      <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text">08AM</span>
+          <span class="input-group-text time-hour" data-time="08">08AM</span>
         </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
           <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">09AM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">10AM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">11AM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">12PM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">01PM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">02PM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">03PM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">04PM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text">05PM</span>
-        </div>
-        <textarea class="form-control" aria-label="8AM schedule textarea input"></textarea>
-          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        </div>
       </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="09" data-time="08">09AM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="10">10AM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="11">11AM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="12">12PM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="13">01PM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="14">02PM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="15">03PM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group ">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="16">04PM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text time-hour" data-time="17">05PM</span>
+        </div>
+        <textarea class="form-control time-stage" aria-label="8AM schedule textarea input"></textarea>
+          <button class="saveBtn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        </div>
+    </div>
+
+    <div class="test" data-toot="4"></div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
