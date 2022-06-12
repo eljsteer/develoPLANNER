@@ -5,7 +5,6 @@ console.log(today);
 
 const dataSaved = $(".data-saved")
 const timeStageEl = $(".time-stage");
-const timeHourEl = $(".time-hour");
 const saveBtn = $(".saveBtn");
 const saveDisplay = $("#data-saved")
 var currentHour = today.format("kk")
@@ -26,7 +25,8 @@ const hours = [
 
 console.log(currentHour)
 
-timeHourEl.each(function(index, item) {
+timeStageEl.each(function() {
+    console.log(timeStageEl.data("time"))
     if (currentHour > timeStageEl.data("time")) {
         timeStageEl.addClass("past");
     
@@ -36,7 +36,6 @@ timeHourEl.each(function(index, item) {
     } else if (currentHour == timeStageEl.data("time")) {
         timeStageEl.addClass("present");
     };
-    
 })
 
 // for (var i = 0; i < hours.length; i++) {
