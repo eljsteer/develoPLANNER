@@ -1,7 +1,13 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 16px;
   line-height: 1;
+}
+
+.wideview {
+  display:flex;
+  flex-direction: column;
+  max-width: 1400px;
 }
 
 textarea{
@@ -25,6 +31,16 @@ textarea{
   text-align: center;
   border-radius: 15px;
 }
+
+.time-hour {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center;
+  border:#00000070 1px solid;
+  width: 80px;
+}
+
 .time-stage{
   border:#00000070 1px solid;
 }
@@ -44,11 +60,20 @@ textarea{
 }
 
 .saveBtn {
+  padding: 24px;
+  font-size: 24px;
+  font-weight: bold;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
-  color: white;
+  color: black;
+}
+
+.saveBtn:hover {
+  color:white;
+  background-color: rgb(57, 122, 241);
+  transition: all .3s ease-in-out;
 }
 
 .saveBtn i:hover {
