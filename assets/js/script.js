@@ -6,7 +6,9 @@ console.log(today);
 const dataSaved = $(".data-saved")
 const timeStageEl = $(".time-stage");
 const timeHourEl = $(".time-hour");
-var currentHour = Number(today.format("kk"));
+const saveBtn = $(".saveBtn");
+const saveDisplay = $("#data-saved")
+var currentHour = today.format("kk")
 var savedSchedules = [];
 
 const hours = [
@@ -22,42 +24,44 @@ const hours = [
     17,
 ]
 
-// for (var i = 0; i < hours.length; i++) {
-//     if (currentHour === hours[i]) {
-//         console.log(i);
-//         timeHourEl(i).classList.add("present");
-//     }
-//     if (currentHour > hours[i]) {
-//         console.log(i);
-//         timeHourEl(i).classList.add("past");
-//     }
-//     if (currentHour < hours[i]) {
-//         console.log(i);
-//         timeHourEl(i).classList.add("future");
-//     }
-// }
+console.log(currentHour)
 
 timeHourEl.each(function(index, item) {
-    if (currentHour > timeHourEl.data("time")) {
+    if (currentHour > timeStageEl.data("time")) {
         timeStageEl.addClass("past");
     
-    } else if(currentHour < timeHourEl.data("time")) {
+    } else if(currentHour < timeStageEl.data("time")) {
         timeStageEl.addClass("future");
     
-    } else if (currentHour == timeHourEl.data("time")) {
+    } else if (currentHour == timeStageEl.data("time")) {
         timeStageEl.addClass("present");
     };
     
 })
 
-console.log(currentHour)
-
-var saveMessage = "Appointment added to localStorage ✔"
+// for (var i = 0; i < hours.length; i++) {
+//     if (currentHour === hours[i]) {
+//       console.log('current');
+//       document.getElementById('stage').classList.add('present');
+      
+//     }
+//     if (currentHour > hours[i]) {
+//       console.log('past');
+//       document.getElementById('stage').classList.add('past');
+      
+//     }
+//     if (currentHour < hours[i]) {
+//       console.log('future');
+//       document.getElementById('stage').classList.add('future');
+      
+//     }
+//   }
 
 var savedSchedules = JSON.parse(localStorage.getItem("scheduleData"))
 
-$(".saveBtn").on('click', function (event) {
-    $("#data-saved") = saveMessage.text
+saveBtn.on('click', function () {
+    var saveMessage = "Appointment added to localStorage ✔"
+    saveDisplay = text(saveMessage)
 })
 
 // function that auto refreshes the page every 30secs
