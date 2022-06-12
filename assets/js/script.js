@@ -19,22 +19,26 @@ const hours = [
     17,
 ]
 
-$(".time-hour").each(function(index, time) {
-
-    if ( currentHour > timeHourEl.data("time")) {
+$(".time-hour").each(function(index, item) {
+    if (currentHour > timeHourEl.data("time")) {
         timeStageEl.addClass("past");
     
     } else if(currentHour < timeHourEl.data("time")) {
         timeStageEl.addClass("future");
     
-    } else if ( currentHour = timeHourEl.data("time")) {
+    } else if (currentHour == timeHourEl.data("time")) {
         timeStageEl.addClass("present");
     };
+    
 })
+
+console.log(currentHour)
+
+
+
 
 // function that auto refreshes the page every 30secs
 
 // For Loop function that creates 
 // for (var i=0; i < hours.length; i++) {
-    
 // }
