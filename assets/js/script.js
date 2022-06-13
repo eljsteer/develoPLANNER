@@ -56,13 +56,12 @@ saveBtn.on("click", function(event) {
     localStorage.setItem("SavedSchedules", JSON.stringify(savedSchedules))
 })
 
-// saveBtn.on("click", function () {
-//     var saveMessage = ("Appointment added to localStorage ✔")
-//     saveDisplay.text(saveMessage);
-//     saveDisplay.css("display", "flex");
-//     var fade_out = function() {
-//         $("#data-saved").fadeOut(500);
-//         }
-//         setTimeout(fade_out, 3000);
-    
-// })
+saveBtn.on("click", function () {
+    var saveMessage = ("Appointment added to localStorage ✔")
+    saveDisplay.text(saveMessage);
+    saveDisplay.css("display", "flex");
+    var fade_out = function() {
+        $("#data-saved").fadeOut(500);
+        }
+        setTimeout(fade_out, 2000);
+})
