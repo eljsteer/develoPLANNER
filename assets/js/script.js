@@ -3,7 +3,6 @@ var today = moment();
 $("#currentDay").text(today.format("dddd Do MMMM YYYY"));
 console.log(today);
 
-const dataSaved = $(".data-saved")
 const timeStageEl = $(".time-stage");
 const saveBtn = $(".saveBtn");
 const saveDisplay = $("#data-saved")
@@ -25,15 +24,17 @@ const hours = [
 
 console.log(currentHour)
 
-timeStageEl.each(function() {
-    console.log(timeStageEl.data("time"))
-    if (currentHour > timeStageEl.data("time")) {
+timeStageEl.each(function(i, item) {
+
+    console.log(item.dataset["time"])
+
+    if (currentHour > item.dataset["time"]) {
         timeStageEl.addClass("past");
     
-    } else if(currentHour < timeStageEl.data("time")) {
+    } else if(currentHour < item.dataset["time"]) {
         timeStageEl.addClass("future");
     
-    } else if (currentHour == timeStageEl.data("time")) {
+    } else if (currentHour == item.dataset["time"]) {
         timeStageEl.addClass("present");
     };
 })
@@ -56,11 +57,19 @@ timeStageEl.each(function() {
 //     }
 //   }
 
+
+
+
 var savedSchedules = JSON.parse(localStorage.getItem("scheduleData"))
 
-saveBtn.on('click', function () {
-    var saveMessage = "Appointment added to localStorage ✔"
-    saveDisplay = text(saveMessage)
+    saveBtn.on("click", function () {
+        var saveMessage = ("Appointment added to localStorage ✔")
+        saveDisplay.text(saveMessage);
+        saveDisplay.css("display", "flex");
+        var fade_out = function() {
+            $("#data-saved").fadeOut(500);
+          }
+          setTimeout(fade_out, 3000);
+        
 })
-
 // function that auto refreshes the page every 30secs

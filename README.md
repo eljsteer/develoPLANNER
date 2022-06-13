@@ -44,10 +44,10 @@ I feel my overall knowledge of javascript and building has definitely improved a
 ## Credits
   - (https://api.jquery.com/data/)[delftstack.com]
   - (https://www.w3schools.com/js/js_number_methods.asp)[bobbyhadz.com]
+  - (https://stackoverflow.com/questions/32913226/auto-refresh-page-every-30-seconds)[Developer-mozilla-Docs]
+  - (https://stackoverflow.com/questions/1911290/make-div-text-disappear-after-5-seconds-using-jquery)[bobbyhadz.com]
+  - (https://api.jquery.com/fadeout/)[data-flair.training]
   
-  - (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)[Developer-mozilla-Docs]
-  - (https://bobbyhadz.com/blog/javascript-cannot-read-property-setattribute-of-null#:~:text=Conclusion%20%23-,The%20%22Cannot%20read%20property%20'setAttribute'%20of%20null%22%20error,the%20DOM%20elements%20are%20created.)[bobbyhadz.com]
-  - (https://data-flair.training/blogs/javascript-quiz/)[data-flair.training]
   - (https://www.proprofs.com/quiz-school/story.php?title=pp-mzqxmzy3mwt58y)[www.proprofs.com]
   - (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)[Developer-mozilla-Docs]
   - (https://thewebdev.info/2021/08/08/how-to-push-json-objects-into-a-json-array-stored-in-local-storage/#:~:text=To%20push%20JSON%20objects%20into%20an%20array%20in%20local%20storage,push(obj)%3B%20localStorage.)[thewebdev.info]
