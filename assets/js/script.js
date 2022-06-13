@@ -24,43 +24,31 @@ const hours = [
 
 console.log(currentHour)
 
-timeStageEl.each(function(i, item) {
+timeStageEl.each(function(index, item) {
 
     console.log(item.dataset["time"])
 
     if (currentHour > item.dataset["time"]) {
-        timeStageEl.addClass("past");
+     item.classList.add("past");
     
     } else if(currentHour < item.dataset["time"]) {
-        timeStageEl.addClass("future");
+        item.classList.add("future");
     
     } else if (currentHour == item.dataset["time"]) {
-        timeStageEl.addClass("present");
+        item.classList.add("present");
     };
 })
 
-// for (var i = 0; i < hours.length; i++) {
-//     if (currentHour === hours[i]) {
-//       console.log('current');
-//       document.getElementById('stage').classList.add('present');
-      
-//     }
-//     if (currentHour > hours[i]) {
-//       console.log('past');
-//       document.getElementById('stage').classList.add('past');
-      
-//     }
-//     if (currentHour < hours[i]) {
-//       console.log('future');
-//       document.getElementById('stage').classList.add('future');
-      
-//     }
-//   }
+var savedSchedules = JSON.parse(localStorage.getItem("scheduleData")) || [];
 
+saveBtn.on("click", function(event) {
 
-
-
-var savedSchedules = JSON.parse(localStorage.getItem("scheduleData"))
+    var scheduleData = {};
+    timeStageEl = text();
+    console.log(timeStageEl)
+    savedSchedules.push(scheduleData);
+    localStorage.setItem("SavedSchedules", JSON.stringify(savedSchedules))
+})
 
     saveBtn.on("click", function () {
         var saveMessage = ("Appointment added to localStorage ✔")
@@ -72,4 +60,3 @@ var savedSchedules = JSON.parse(localStorage.getItem("scheduleData"))
           setTimeout(fade_out, 3000);
         
 })
-// function that auto refreshes the page every 30secs

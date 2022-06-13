@@ -43,6 +43,7 @@ textarea{
 
 .time-stage{
   border:#00000070 1px solid;
+  font-weight: bold;
 }
 
 #data-saved {
@@ -55,7 +56,7 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
@@ -65,7 +66,7 @@ textarea{
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
 .saveBtn {
