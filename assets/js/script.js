@@ -4,9 +4,9 @@ $("#currentDay").text(today.format("dddd Do MMMM YYYY"));
 
 const timeStageEl = $(".time-stage");
 const saveBtn = $(".saveBtn");
-const saveDisplay = $("#data-saved")
-var currentHour = today.format("kk")
-var savedSchedules = [];
+const saveDisplay = $("#data-saved");
+let currentHour = today.format("kk");
+let savedSchedules = [];
 
 const hours = [
     08,
@@ -34,27 +34,20 @@ timeStageEl.each(function(index, item) {
     };
 })
 
-var savedSchedules = JSON.parse(localStorage.getItem("scheduleData")) || [];
-
 saveBtn.on("click", function(event) {
-    savedSchedules = [];
+   
+    let text = $(this).siblings(".time-stage").val();
 
-    timeStageEl.each(function(index, item) {
-        var scheduleData = $("#stage1").val();
+    let apptHour = $(this).siblings(".time-stage").attr("data-time");
 
-        if (scheduleData != "") {
-            savedSchedules.push(scheduleData);
-        
-        } else if(scheduleData == "") {
-            savedSchedules.push("");
-        };
-        
-    })
-
-    
-
-    localStorage.setItem("SavedSchedules", JSON.stringify(savedSchedules))
+    localStorage.setItem(apptHour, JSON.stringify(text))
 })
+
+timeStageEl.each(function(index, item) {
+    var retrieve = $(this).attr("data-time");
+    var retrieveItem = localStorage.getItem(retrieve);
+    $(this).val(retrieveItem);
+ })
 
 saveBtn.on("click", function () {
     var saveMessage = ("Appointment added to localStorage ✔")

@@ -3,51 +3,41 @@ A Work/Job Planner for Developers
 
 
 ## Software Application summary
-This software is a quiz game that will test your knowledge of Javascript with computer science and javascript based questions. You will be scored by the time remaining left on the timer once the user has finished answering all the questions.
+This software is designed to be a tool for busy developers and the professionals to schedule tasks or any appointment against an time period of an hour over the working day. The Save button will save that so the schedules saved in the application can be accessed any time.
 
 ## Inspiration
 
-I had the inspiration to build the Quiz Game application in order to further develop my javascript skills and practice with using web APIs. 
+I had the inspiration to build the DeveloPLANNER from needing a planner schedule which would help me keep track of the tasks and study i needed to complete as my day had got a whole lot busier after taking on study.
 
 ## Updates
 
-I initially updated a standard html template to incorporate the quiz layout and sections. I added the rules to the game and developed a start button to initiate the quiz.
-I then created the timer function and called the function in the start button.
-I created an array of objects which contained all the questions and answers.
-Had some assistance from Sandesh and Nathan in developing the method to display the questions and answers and then cycle through them.
-I created a function to test the answer against the option that the user chose. Then added conditional elements to cycle to the next question if correct or deduct 10secs off the timer if the answer selected was incorrect.
-Created conditionals to determine when the quiz is finished by either end of questions or timer reaching 0.
-Added a huge amount of data attribute adjustments once user clicks on different elements and starts different parts of the quiz game to show and hide different sections and buttons.
-Added basic css formatting and styling.
-Commented sections of my code in html, css and js files to breakup and distinguish easier the segments of code.
-update of file names and links to allow github to display the website while changing repository anem to lowercase and also removing the #'s on the start of the html files.
+I updated the starter code with some basic templates code from Bootstrap to provide a textarea and buttons in a succinct clean layout.
+I designed it so that the majority of the design would be based in HTML and then any dynamic changes would be changed with jquery or css for small ui animations etc.
+This was to simplify the code and so it was less likely to break with less jquery or dynamic sections. 
+I then used the moment library to adjust the time display format. Following this I needed to update the textarea's to change color by adding a class with a linked css code. I completed this by conditional functions that would test the time set at the top against the data-attribute which was set to the hour of the day. I used 24hr format so that the if conditionals would work correctly as the hour increased right the way through from 8am to 5pm (08-17).
+I then set the schedule text to a key; being the hour that it corresponded to. I then retrieved the key and it's schedule value from local storage by looping through each data attribute (hour in the schedule) and retrieving the value saved in local storage and displaying in the textarea.
 
 ## Skills and Knowledge learned
 
-I learned a lot from all aspects on this project also, particularly on the design and methodology.
+This project continued to push my skils and knowledge.
+I really enjoyed employing bootstrap, jquery and moment for the first time. The simplicity of moment was great to work with.
+The power of Bootstrap was impressive and made designing the application that much more ufn knowing how much time it could have been taking if I was fiddling around with css to complete the same result.
+I am becoming more familiar with functions and how they change and relate to the elements in the DOM.
+Further developed my knowledge around localStorage for setting and getting items from the storage. 
 
-The most important thing I learnt which was reinforced was the importance of building one section at a time and sequentially move onto the next section only once that section is working.
-I solidified my knowledge around changing and setting data attributes on elements in HTML. I also 
-I further developed my knowlesge around functions and how they work and layout of lines of code whether to include in the function or outside.
-Further developed upon my knowledge around conditional statements as this project required a lot more logic especially when I reduced the index pages to jsut having one page and needing to show and hide the different elements or have them all interact correctly.
-Learn a lot on how to store items in local storage and the complicated features of this with alternating between strings and arrays with storing and drawing on the data.
-I feel my overall knowledge of javascript and building has definitely improved and putting functions together with different logic has improved, although still struggle with the design side and determining the easiest way to build the application
+I continue to feel my overall knowledge of javascript and designing the application is improving. I am still focussing on developing my knowledge of the technicality of the javascript code as I struggle to implement what I am thinking often. I can build some code that is often close to the working code with a couple small changes to complete it.
 
 ## Application Example Images & Videos
-### Opening Welcome Screen
-![Opening Welcome Screen](assets/images/quiz-time-openingscreen.jpg)
-### Quiz in Action Screen
-![Quiz in Action Screen](assets/images/quiz-time-quizscreen.jpg)
-### Submit Scores Screen
-![Submit Scores Screen](assets/images/quiz-time-submitscoresscreen.jpg)
+### Main Schedule Screen
+![Main Schedule Screen](assets/media/develoPLANNER-main-screen.jpg)
+### Schedule popup on Save-Button Press
+![Schedule Saved Popup](assets/media/develoPLANNER-main-screen_saved-schedule.jpg)
+### Schedule in Action
+![Schedule in Action Video](assets/media)
 
 ## Credits
-  - (https://api.jquery.com/data/)[delftstack.com]
-  - (https://www.w3schools.com/js/js_number_methods.asp)[bobbyhadz.com]
-  - (https://stackoverflow.com/questions/32913226/auto-refresh-page-every-30-seconds)[Developer-mozilla-Docs]
-  - (https://stackoverflow.com/questions/1911290/make-div-text-disappear-after-5-seconds-using-jquery)[bobbyhadz.com]
-  - (https://api.jquery.com/fadeout/)[data-flair.training]
-  
-  - (https://www.proprofs.com/quiz-school/story.php?title=pp-mzqxmzy3mwt58y)[www.proprofs.com]
-  - (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)[Developer-mozilla-Docs]
-  - (https://thewebdev.info/2021/08/08/how-to-push-json-objects-into-a-json-array-stored-in-local-storage/#:~:text=To%20push%20JSON%20objects%20into%20an%20array%20in%20local%20storage,push(obj)%3B%20localStorage.)[thewebdev.info]
+  - (https://api.jquery.com/data/)[api.jquery.com]
+  - (https://www.w3schools.com/js/js_number_methods.asp)[w3schools.com]
+  - (https://stackoverflow.com/questions/32913226/auto-refresh-page-every-30-seconds)[stackoverflow.com]
+  - (https://stackoverflow.com/questions/1911290/make-div-text-disappear-after-5-seconds-using-jquery)[stackoverflow.com]
+  - (https://api.jquery.com/fadeout/)[api.jquery.com]
