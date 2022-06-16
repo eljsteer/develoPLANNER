@@ -40,13 +40,13 @@ saveBtn.on("click", function(event) {
 
     let apptHour = $(this).siblings(".time-stage").attr("data-time");
 
-    localStorage.setItem(apptHour, JSON.stringify(text))
+    localStorage.setItem(apptHour, (text))
 })
 
 timeStageEl.each(function(index, item) {
     var retrieve = $(this).attr("data-time");
     var retrieveItem = localStorage.getItem(retrieve);
-    $(this).val(retrieveItem);
+    $(this).val(retrieveItem)
  })
 
 saveBtn.on("click", function () {

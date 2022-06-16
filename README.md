@@ -25,7 +25,7 @@ The power of Bootstrap was impressive and made designing the application that mu
 I am becoming more familiar with functions and how they change and relate to the elements in the DOM.
 Further developed my knowledge around localStorage for setting and getting items from the storage. 
 
-I continue to feel my overall knowledge of javascript and designing the application is improving. I am still focussing on developing my knowledge of the technicality of the javascript code as I struggle to implement what I am thinking often. I can build some code that is often close to the working code with a couple small changes to complete it.
+I continue to feel my overall knowledge of javascript and application code design is improving. I am still focussing on developing my knowledge of the technicality of the javascript code as I struggle to implement what I am thinking often. I can build some code that is often close to the working code with a couple small changes to complete it.
 
 ## Application Example Images & Videos
 ### Main Schedule Screen
@@ -33,7 +33,7 @@ I continue to feel my overall knowledge of javascript and designing the applicat
 ### Schedule popup on Save-Button Press
 ![Schedule Saved Popup](assets/media/develoPLANNER-main-screen_saved-schedule.jpg)
 ### Schedule in Action
-![Schedule in Action Video](assets/media)
+![Schedule in Action Video](assets/media/develoPLANNer_inaction.mp4)
 
 ## Credits
   - (https://api.jquery.com/data/)[api.jquery.com]
