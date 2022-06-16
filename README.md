@@ -1,7 +1,6 @@
 # develoPLANNER
 A Work/Job Planner for Developers
 
-
 ## Software Application summary
 This software is designed to be a tool for busy developers and the professionals to schedule tasks or any appointment against an time period of an hour over the working day. The Save button will save that so the schedules saved in the application can be accessed any time.
 
