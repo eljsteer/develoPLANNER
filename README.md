@@ -16,6 +16,7 @@ I designed it so that the majority of the design would be based in HTML and then
 This was to simplify the code and so it was less likely to break with less jquery or dynamic sections. 
 I then used the moment library to adjust the time display format. Following this I needed to update the textarea's to change color by adding a class with a linked css code. I completed this by conditional functions that would test the time set at the top against the data-attribute which was set to the hour of the day. I used 24hr format so that the if conditionals would work correctly as the hour increased right the way through from 8am to 5pm (08-17).
 I then set the schedule text to a key; being the hour that it corresponded to. I then retrieved the key and it's schedule value from local storage by looping through each data attribute (hour in the schedule) and retrieving the value saved in local storage and displaying in the textarea.
+Last update was to remove the speechmark quotes from around the text when saving to the LocalStorage.
 
 ## Skills and Knowledge learned
 
